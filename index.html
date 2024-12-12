@@ -1,12 +1,35 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>MEMO in the AiR</title>
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+    <script
+      type="text/javascript"
+      src="https://raw.githack.com/AR-js-org/AR.js/3.4.5/three.js/build/ar-threex-location-only.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://raw.githack.com/AR-js-org/AR.js/3.4.5/aframe/build/aframe-ar.js"
+    ></script>
   </head>
   <body>
-    <div id="app"></div>
+    <div id="app">
+      <a-scene
+        vr-mode-ui="enabled: false"
+        arjs="sourceType: webcam; videoTexture: true; debugUIEnabled: false"
+        renderer="antialias: true; alpha: true"
+      >
+        <a-camera
+          id="arCamera"
+          look-controls-enabled="true"
+          arjs-device-orientation-controls="smoothingFactor: 0.1"
+          gps-new-camera="gpsMinDistance: 5"
+        >
+        </a-camera>
+      </a-scene>
+    </div>
     <script type="module" src="/src/main.ts"></script>
   </body>
 </html>
