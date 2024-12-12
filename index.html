@@ -13,23 +13,18 @@
       type="text/javascript"
       src="https://raw.githack.com/AR-js-org/AR.js/3.4.5/aframe/build/aframe-ar.js"
     ></script>
+    <script type="module" src="/src/main.ts"></script>
   </head>
   <body>
     <div id="app">
       <a-scene
+        id="aScene"
         vr-mode-ui="enabled: false"
         arjs="sourceType: webcam; videoTexture: true; debugUIEnabled: false"
         renderer="antialias: true; alpha: true"
       >
-        <a-camera
-          id="arCamera"
-          look-controls-enabled="true"
-          arjs-device-orientation-controls="smoothingFactor: 0.1"
-          gps-new-camera="gpsMinDistance: 5"
-        >
-        </a-camera>
       </a-scene>
     </div>
-    <script type="module" src="/src/main.ts"></script>
+    <input type="hidden" id="addMemoGrid" />
   </body>
 </html>
