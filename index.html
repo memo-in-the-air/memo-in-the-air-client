@@ -23,6 +23,11 @@
         arjs="sourceType: webcam; videoTexture: true; debugUIEnabled: false"
         renderer="antialias: true; alpha: true"
       >
+        <a-camera
+          id="arCamera"
+          gps-new-camera
+          arjs-device-orientation-controls="smoothingFactor: 0.1"
+        ></a-camera>
       </a-scene>
     </div>
   </body>
