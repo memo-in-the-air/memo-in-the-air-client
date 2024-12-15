@@ -15,13 +15,6 @@
     ></script>
     <script type="module" src="/firebaseConfig.ts"></script>
     <script type="module" src="/src/main.ts"></script>
-    <script>
-      alert(document.getElementById("aScene"));
-      if (window.userId !== undefined) {
-        console.log(window.userId);
-        getMemoList(window.userId);
-      }
-    </script>
   </head>
   <body>
     <div id="app">
@@ -38,5 +31,12 @@
         ></a-camera>
       </a-scene>
     </div>
+    <script>
+      alert(document.getElementById("aScene"));
+      if (window.userId !== undefined) {
+        console.log(window.userId);
+        getMemoList(window.userId);
+      }
+    </script>
   </body>
 </html>
