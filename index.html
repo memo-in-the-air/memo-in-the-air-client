@@ -16,6 +16,7 @@
     <script type="module" src="/firebaseConfig.ts"></script>
     <script type="module" src="/src/main.ts"></script>
     <script>
+      alert(document.getElementById("aScene"));
       if (window.userId !== undefined) {
         console.log(window.userId);
         getMemoList(window.userId);
