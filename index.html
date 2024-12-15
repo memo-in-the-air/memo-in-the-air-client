@@ -14,8 +14,10 @@
       src="https://raw.githack.com/AR-js-org/AR.js/3.4.5/aframe/build/aframe-ar.js"
     ></script>
     <script>
-      if (userId !== undefined) {
-        alert("유저 번호 : " + userId);
+      if (window.userId !== undefined) {
+        alert("유저 번호 : " + window.userId);
+      } else {
+        alert(userId);
       }
     </script>
     <script type="module" src="/src/main.ts"></script>
