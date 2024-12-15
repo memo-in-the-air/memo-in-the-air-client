@@ -13,14 +13,14 @@
       type="text/javascript"
       src="https://raw.githack.com/AR-js-org/AR.js/3.4.5/aframe/build/aframe-ar.js"
     ></script>
+    <script type="module" src="/src/main.ts"></script>
+    <script type="module" src="/firebaseConfig.ts"></script>
     <script>
       if (window.userId !== undefined) {
-        alert("유저 번호 : " + window.userId);
-      } else {
-        alert(userId);
+        console.log(window.userId);
+        getMemoList(window.userId);
       }
     </script>
-    <script type="module" src="/src/main.ts"></script>
   </head>
   <body>
     <div id="app">
