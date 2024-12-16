@@ -14,7 +14,7 @@
       src="https://raw.githack.com/AR-js-org/AR.js/3.4.5/aframe/build/aframe-ar.js"
     ></script>
     <script src="https://unpkg.com/aframe-look-at-component@0.8.0/dist/aframe-look-at-component.min.js"></script>
-    <script type="module" src="/src/main.ts"></script>
+    <script></script>
   </head>
   <body>
     <div id="app">
@@ -25,23 +25,6 @@
         renderer="antialias: true; alpha: true"
         embedded
       >
-        <a-plane
-          width="1"
-          height="0.7"
-          color="yellow"
-          look-at="[gps-new-camera]"
-          gps-entity-place="latitude: 37.50791768082606; longitude: 127.06166299208061; altitude: 34.72486358941497;"
-        >
-          <a-text
-            value="Hello World"
-            align="center"
-            color="black"
-            width="2"
-            position="0 0 0.01"
-          ></a-text>
-        </a-plane>
-
-        <a-entity gps-new-camera="gpsMinDistance: 5"></a-entity>
       </a-scene>
     </div>
   </body>
